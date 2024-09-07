@@ -13,8 +13,8 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
-    port: 3000,
+    static: path.resolve(__dirname, 'dist'), // Updated property
+    port: 3001,
   },
   module: {
     rules: [
@@ -35,6 +35,3 @@ module.exports = {
     ],
   },
 };
-
-
-
